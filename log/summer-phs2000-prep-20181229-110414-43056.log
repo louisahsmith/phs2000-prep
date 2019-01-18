@@ -1,0 +1,11 @@
+
+Listening on http://127.0.0.1:43056
+sh: line 0: kill: (49126) - No such process
+sh: line 0: kill: (49129) - No such process
+Quitting from lines 3-4 (exercise.Rmd) 
+sh: line 0: kill: (49226) - No such process
+sh: line 0: kill: (49262) - No such process
+
+
+Execution halted
+

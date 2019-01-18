@@ -1,0 +1,213 @@
+
+Listening on http://127.0.0.1:46171
+pandoc: /scratch/RtmpgP5fIA/rmarkdown-str5b2b197a8db.html: openFile: does not exist (No such file or directory)
+pandoc: /scratch/RtmpgP5fIA/rmarkdown-str5b2f197a8db.html: openFile: does not exist (No such file or directory)
+pandoc: /scratch/RtmpgP5fIA/rmarkdown-str5b33197a8db.html: openFile: does not exist (No such file or directory)
+pandoc: /scratch/RtmpgP5fIA/rmarkdown-str5b34197a8db.html: openFile: does not exist (No such file or directory)
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23343 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23342 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23341 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23343 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23342 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23341 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+sh: line 0: kill: (23339) - No such process
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23343 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23342 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23341 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23343 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23342 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23343 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23342 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+sh: line 0: kill: (23341) - No such process
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23343 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23343 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+sh: line 0: kill: (23342) - No such process
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23346 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+sh: line 0: kill: (23343) - No such process
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23347 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+sh: line 0: kill: (23346) - No such process
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23348 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+sh: line 0: kill: (23347) - No such process
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23350 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+sh: line 0: kill: (23348) - No such process
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23355 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+Warning in selectChildren(jobs, timeout) :
+  cannot wait for child 23340 as it does not exist
+
+
+Execution halted
+
