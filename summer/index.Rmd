@@ -2,7 +2,7 @@
 title: "PHS Summer Prep"
 output:
   learnr::tutorial:
-    version: 1.0
+    version: 1.1
     theme: paper
 runtime: shiny_prerendered
 ---
@@ -40,7 +40,7 @@ You will learn a wide variety of quantitative methods in PHS 2000 from several d
 
 In this tutorial and throughout the course you'll notice that we attempt to represent as much as possible in mathematical notation. As with any other language, mastering this notation helps you communicate efficiently and precisely. However, there's no unified language -- either in English or notation -- across disciplines, and the differences and inconsistencies can be frustrating. One goal of this tutorial is to introduce you to  notation and to formalize some concepts you may already be familiar with, in order to minimize this frustration. Representing methods in mathematical notation can be helpful in making connections to theory and to implementation in code, and it can also help both you and the PHS 2000 teaching team see what you do and don't understand.
 
-If you have taken several statistics courses before, you may familiar with most or all of the concepts we go through in this tutorial. We nevertheless recommend that you at least read through it so that you have an understanding of what *we* expect you to be familiar with and to make sure you didn't miss anything in your previous courses. If you're not as comfortable with statistics or R or both, take notes as you go along that you can refer back to later. We hope for all of you that this can be a resource that you return to when you encounter difficulties over the course of the next year.
+If you have taken several statistics courses before, you may be familiar with most or all of the concepts we go through in this tutorial. We nevertheless recommend that you at least read through it so that you have an understanding of what *we* expect you to be familiar with and to make sure you didn't miss anything in your previous courses. If you're not as comfortable with statistics or R or both, take notes as you go along that you can refer back to later. We hope for all of you that this can be a resource that you return to when you encounter difficulties over the course of the next year.
 
 #### Why R?
 
@@ -235,7 +235,7 @@ c(3, 52, 12, 875, 354, 3)
 seq(10, 18, by = 2)
 ```
 ```{r vectors4, exercise = TRUE, exercise.lines = 1}
-seq(10, 20, length.out = 5)
+seq(10, 20, length.out = 6)
 ```
 ```{r vectors5, exercise = TRUE, exercise.lines = 1}
 rep(32, times = 6)
@@ -612,18 +612,18 @@ sum(draws == "Blue" & draws == "Red")/n
 #### Flipping multiple coins
 What if our events aren't mutually exclusive? Let's return to a coin flipping experiment, but imagine this time that the experiment is to flip 2 coins.
 
-Let $H$ denote the event that the *first* coin is a 'heads'.
+Let $H_1$ denote the event that the *first* coin is a 'heads'.
 
-Let $T$ denote the event that the *second* coin is a 'tails'.
+Let $T_2$ denote the event that the *second* coin is a 'tails'.
 
-Keep in mind that there are four possible outcomes of the experiment: 'heads' & 'heads'; 'heads' & 'tails'; 'tails' & 'heads'; and 'tails' & 'tails'. The first event of interest, $H$, occurs in the first two outcomes, and $T$ occurs in the second and fourth. The fact that the diagram below (not to scale) has an overlapping area depicts the fact that there exists an outcome ('heads' & 'tails') in which both events occur -- their intersection.
+Keep in mind that there are four possible outcomes of the experiment: 'heads' & 'heads'; 'heads' & 'tails'; 'tails' & 'heads'; and 'tails' & 'tails'. The first event of interest, $H_1$, occurs in the first two outcomes, and $T_2$ occurs in the second and fourth. The fact that the diagram below (not to scale) has an overlapping area depicts the fact that there exists an outcome ('heads' & 'tails') in which both events occur -- their intersection.
 
 ```{r 2coins, echo = F, fig.height=3.15, fig.width = 4.5, fig.align="center"}
 par(mgp=c(0,0,0), mar= rep(0.5, 4))
 symbols(c(1, 1.5), c(1, 1), circles = c(.5, .5),
         inches = F, fg = c("blue", "red"),
         xlim = c(.5, 2), xaxt='n', yaxt = "n", ann=FALSE)
-text(c(.75, 1.25, 1.75), c(1, 1, 1), labels = c("H", expression("H"*intersect(T)), "T"), cex = 2.5, col = c("blue", "purple", "red"))
+text(c(.75, 1.25, 1.75), c(1, 1, 1), labels = c(expression(H[1]), expression("H"*intersect(T)), expression(T[2])), cex = 2.5, col = c("blue", "purple", "red"))
 ```
 ```{r blueRedQ, echo = F}
 question('What is the probability associated with the overlapping area on the diagram?',
@@ -636,11 +636,11 @@ question('What is the probability associated with the overlapping area on the di
   )
 ```
 
-Now they are no longer mutually exclusive: $P(H \cap T) \neq 0$. If we want to know the probability of their union -- that is, $P(H \cup T)$, the probability that we get a 'heads' first *or* a 'tails' second, we can no longer just add the individual probabilities.
+Now they are no longer mutually exclusive: $P(H_1 \cap T_2) \neq 0$. If we want to know the probability of their union -- that is, $P(H_1 \cup T_2)$, the probability that we get a 'heads' first *or* a 'tails' second, we can no longer just add the individual probabilities.
 
-In fact, $P(H) = 0.5$ and $P(T) = 0.5$ (we're still assuming fair coins), so if we just added the probabilities together, we would have a probability of 1, which doesn't make sense -- it would imply that every single time we flipped two coins, the first would be guaranteed to be a 'heads' *or* the second would be 'tails' (i.e., the 'tails' & 'heads' outcome doesn't exist). This is an overestimate of the probability of the union because $P(H)$ includes all those times we *also* get 'tails' next, and $P(T)$ includes all those times we *also* got 'heads' first (the overlapping area in the diagram) -- but those two situations are exactly the same outcome, so we are double-counting all the times we get 'heads' & 'tails'. 
+In fact, $P(H_1) = 0.5$ and $P(T_2) = 0.5$ (we're still assuming fair coins), so if we just added the probabilities together, we would have a probability of 1, which doesn't make sense -- it would imply that every single time we flipped two coins, the first would be guaranteed to be a 'heads' *or* the second would be 'tails' (i.e., the 'tails' & 'heads' outcome doesn't exist). This is an overestimate of the probability of the union because $P(H_1)$ includes all those times we *also* get 'tails' next, and $P(T_2)$ includes all those times we *also* got 'heads' first (the overlapping area in the diagram) -- but those two situations are exactly the same outcome, so we are double-counting all the times we get 'heads' & 'tails'. 
 
-We have to subtract off the doubly-counted intersection: $P(H \cup T) = P(H) + P(T) - P(H \cap T).$ Since $P(H \cap T) = 0.25$ (it occurs in $\frac{1}{4}$ of the possible outcomes), $P(H \cup T) = 0.5 + 0.5 - 0.25 = 0.75$.
+We have to subtract off the doubly-counted intersection: $P(H_1 \cup T_2) = P(H_1) + P(T_2) - P(H_1 \cap T_2).$ Since $P(H_1 \cap T_2) = 0.25$ (it occurs in $\frac{1}{4}$ of the possible outcomes), $P(H_1 \cup T_2) = 0.5 + 0.5 - 0.25 = 0.75$.
 
 Note that this formula also applies to the case where the events are mutually exclusive, as in our example with the balls. In that case, the last term is just 0, which is why we could write the simpler expression $P(B \cup R) = P(B) + P(R)$ above.
 
@@ -784,7 +784,7 @@ pmf_func(x, fx)
 question("Which of these are valid pmfs?",
     answer('$$f(x) = \\begin{cases}  0.1 & \\text{for } x =  29 \\\\ 0.5 & \\text{for } x =  35 \\\\ 0.4 & \\text{for } x =  62 \\\\ \\end{cases} $$', correct = TRUE),
     answer('$$f(x) = \\begin{cases}  0.1 & \\text{for } x =  0 \\\\ 0.5 & \\text{for } x =  1 \\\\ \\end{cases} $$'),
-    answer('$$f(x) = \\begin{cases}  0.22 & \\text{for } x =  0 \\\\ 0.88 & \\text{for } x =  1 \\\\ \\end{cases} $$', correct = TRUE),
+    answer('$$f(x) = \\begin{cases}  0.12 & \\text{for } x =  0 \\\\ 0.88 & \\text{for } x =  1 \\\\ \\end{cases} $$', correct = TRUE),
     answer('$$f(x) = \\begin{cases}  0 & \\text{for } x =  0 \\\\ 0.5 & \\text{for } x =  1 \\\\ 0.5 & \\text{for } x =  2 \\\\ \\end{cases} $$', correct = TRUE),
     answer('$$f(x) = \\begin{cases}  - 0.5 & \\text{for } x =  0 \\\\ 1.5 & \\text{for } x =  1 \\\\ \\end{cases} $$'),
     allow_retry = T
@@ -2507,7 +2507,7 @@ We express the fact that the actual values we get are estimates by putting "hats
 
 Sometimes these parameters describe a model. A model is essentially a structure that we assume represents the distribution of the data we have collected. The key word here is *assume* -- modeling generally involves making choices about this structure in order to best approximate reality, while knowing that we will never be able to mimic it perfectly. While assumptions may be inevitable, it is important to be able to recognize and acknowledge those that we make -- and those that others make -- and, when appropriate, evaluate the sensitivity of these assumptions to other modeling choices we could have made instead.
 
-Other times we can avoid making assumptions and estimate parameters **non-parametrically**. For example, if we want to estimate the mean blood pressure in a population, we don't need to say anything about the distribution of blood pressure -- it doesn't have to be normal, for example -- in order to calculate a sample mean.
+Other times we can avoid making particular types of assumptions and estimate parameters **non-parametrically**. For example, if we want to estimate the mean blood pressure in a population, we don't need to say anything about the distribution of blood pressure -- it doesn't have to be normal, for example -- in order to calculate a sample mean.
 
 The sample mean is one example of an **estimator**. This is a function of the data: a tool or algorithm that takes in observations and produces an estimate for a given parameter. The sample mean $\frac{1}{n} \sum_{i = 1}^n X_i$ is an estimator of the population mean. (The sample mean gets the special notation $\bar{X}$, read "x-bar".) The sample variance $\frac{1}{n - 1} \sum_{i = 1}^n (X_i - \bar{X})^2$ is an estimator of the population variance. The ordinary least squares estimator is used to estimate regression coefficients for linear regressions.
 
